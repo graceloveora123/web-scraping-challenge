@@ -63,7 +63,7 @@ def scrape_fact():
     #html_table = df.to_html(table_id="html_tbl_css",justify='left',index=False)
     #data = df.to_dict(orient='records')  
     html_table = df.to_html()
-    html_table.replace('\n', '')
+    # html_table.replace('\n', '')
     mission_to_mars['tables']=html_table
 
     browser.quit()
